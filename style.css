@@ -1,0 +1,288 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #263449;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 75px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    color: #102a43;
+    margin-bottom: 35px;
+}
+
+/* HEADER AND NAVIGATION */
+header {
+    background: #102a43;
+    color: #ffffff;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #67c5e8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #67c5e8;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(120deg, #102a43, #1d4968);
+    color: #ffffff;
+    padding: 110px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 43px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #67c5e8;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #e2eaf0;
+}
+
+.btn {
+    display: inline-block;
+    background: #67c5e8;
+    color: #102a43;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* ABOUT SECTION */
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    color: #526477;
+}
+
+/* SERVICES */
+.services {
+    background: #f3f8fc;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(16, 42, 67, 0.07);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: #102a43;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* PORTFOLIO / MY WORK */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.work-card {
+    padding: 25px;
+    border: 1px solid #e1eaf1;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.work-card:hover {
+    border-color: #67c5e8;
+    box-shadow: 0 5px 18px rgba(16, 42, 67, 0.08);
+}
+
+.work-card h3 {
+    color: #102a43;
+    margin-bottom: 10px;
+}
+
+.work-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* TOOLS AND SKILLS */
+.skills {
+    background: #f3f8fc;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.skills-list span {
+    background: #ffffff;
+    color: #102a43;
+    padding: 10px 18px;
+    border-radius: 5px;
+    border: 1px solid #dce8f1;
+    font-size: 14px;
+}
+
+/* CONTACT */
+.contact-content {
+    max-width: 650px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-content p {
+    margin-bottom: 12px;
+    color: #526477;
+}
+
+.contact-content a {
+    color: #147da5;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background: #102a43;
+    color: #ffffff;
+    text-align: center;
+    padding: 22px 0;
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: #102a43;
+        padding: 20px;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 55px 0;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+}
